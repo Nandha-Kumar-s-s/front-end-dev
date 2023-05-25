@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>counter app</h1>
+        <div>
+            <button id = "inc">+</button>
+            <div id = "count-value">0</div>
+            <button id = "dec">-</button> 
+        </div>
+        <button id = "reset">reset</button>
+        <script>
+
+            let counter = 0;
+            //document.getElementById() select the html element by the id
+            const countvalue = document.getElementById('count-value');
+            const increment = document.getElementById('inc');
+            const decrement = document.getElementById('dec');
+            const resetbtn = document.getElementById('reset');
+
+            // create a update func to display the even number and odd number
+            function updatecount(count){
+                if(counter % 2 === 0)
+                countvalue.innerHTML = counter;
+                else{
+                    countvalue.innerHTML = `odd num: ${counter}`;
+                }
+                
+            }
+
+            // addEventListener() is used to handle multiple event handler for the function without overwriting
+
+            increment.addEventListener('click',()=>{
+                counter++;
+                updatecount();
+            });
+
+            decrement.addEventListener('click',()=>{
+                counter--;
+                updatecount();
+            });
+            
+            resetbtn.addEventListener('click',()=>{
+                counter = 0;
+                updatecount();
+            });
+
+          
+        </script>
+
+    </div>
+</body>
+</html>
