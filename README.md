@@ -1,76 +1,78 @@
 # front-end-dev
- it's for learning purpose on daily basics
+ It's for learning purpose on daily basics
 
-## what is JSX?
+## What is JSX?
 
-jsx stands for javascriptXML.it is an extension to js syntax that allows you to write HTML code within js
-it is mostly used in react 
-the purpose of jsx is to provide a more concise way to define the struct and appearance of ui.instead of manually creating and manipulating DOM ele using js ,jsx allows you to describe the desired ui hierachy using html syntax
+JSX stands for javascriptXML.It is an extension to JS syntax that allows you to write HTML code within JS
+It is mostly used in react 
+The purpose of JSX is to provide a more concise way to define the structure and appearance of UI.Instead of manually creating and manipulating DOM elements using JS ,JSX syntax allows you to describe the desired UI hierachy using HTML syntax
 eg react.createElement('div' ,"hi")
 
 ## How react work under the hood?
 
-react maintain a tree aslike html. the html has the dom is like a node
-we can modify each node then it reflect in screen by using react its create a virtual dom it does not affect the screen cause it take a snapshot of virtual dom and then it compare with the actual dom the only updated content will reflect 
+React maintain a tree like HTML. The HTML has the DOM is like a node. 
+We can modify each node then it reflect in screen by using react its create a virtual DOM it does not affect the screen cause it take a snapshot of virtual DOM and then it compare with the actual DOM the only updated content will reflect 
 
-## what is package.json ?
+## What is package.json ?
 
-it is a file used in node.js projects to specify various details about the project ,dependencies, and metadata
+It is a file used in node.js projects to specify various details about the project ,dependencies, and metadata
 
-### project info
+### Project info
 
-info about the name,version,description,author,license
+Info about the name,version,description,author,license
 
-### dependencies
+### Dependencies
 
-it includes a section where you define the external libraries and modules the modules such are the node mod
+It includes a section where you define the external libraries and modules. the modules such are node modules
 
-### scripts
+### Scripts
 
-is used for start the app
-test the app
-build the app
+Is used for start the app
+Test the app
+Build the app
 
-### config
+### Config
 
-for additional config 
+For additional config 
 
 ## package-lock.json?
 
-it serves as a record of the exact versions of all the dependencies install in a project.this file is automatically created and updated whenever you run the npm i 
-### dependency version locking 
+It serves as a record of the exact versions of all the dependencies install in a project.this file is automatically created and updated whenever you run the npm i 
 
-the primary purpose its locks down the exact version of installed package,including their sub dep.this guarantees that everyone working on the project uses the same versions of the dep 
-### rebuild
+### Dependency version locking 
 
-rebuild the same exact version in future
+The primary purpose its locks down the exact version of installed package,including their sub dependencies.This guarantees that everyone working on the project uses the same versions of the dependencies 
 
-## why so many modules under the node modules?
+### Rebuild
 
-cause each modules have its own dependencies and each dep will have a chid dep it create a dep tree for runing the react app smoothly without error that's why we seen so many mod in node mod folder
+Rebuild the same exact version in future
 
-## react app runs?
+## Why so many modules under the node modules?
+
+Cause each modules have its own dependencies and each dependencies will have a chid dependencies it create a dependencies tree for runing the react app smoothly without error that's why we seen so many modules in node modules folder
+
+## React app runs?
 
 ### app setup
-the first step is setting up the development by installing the dep
-### component rendering
-in react the ui is built using comp.comp are in a tree like struct where each comp can contain the child comp.
+The first step is setting up the development by installing the dep
+### Component rendering
+In react the UI is built using component.component are in a tree like structure where each component can contain the child component.
 ### entry point 
-index.js this file serves as the starting point of the app and is res for rendering the top lvl comp into dom.
-when the app is loaded the entry point calls the reactdom.render()
-fun passing the top lvl comp and target dom element where the app should be rendered
+index.js this file serves as the starting point of the app and is response for rendering the top level component into DOM.
+When the app is loaded the entry point calls the reactDom.render()
+function passing the top level component and target DOM element where the app should be rendered
 
-## key folder and files created by react app?
+## Key folder and files created by react app?
 ### src/ folder for your app code
-index.js is for rendering the root comp and mount it into the dom
-app.js these files contains comp
+index.js is for rendering the root component and mount it into the DOM
+app.js these files contains component
 index.css is for styling purpose
 ### public/
 index.html is the main file loaded by browser
 ### node modules/
-this folder is created by npm depends on dependencies
+This folder is created by npm depends on dependencies
 ### package.json 
-holds the metadata and dependencies
+Holds the metadata and dependencies
 ## npm install?
 run npm i it triggers a series of steps to install the project dependencies specified in the package.json file
 1.read package json file to determine the dependencies
