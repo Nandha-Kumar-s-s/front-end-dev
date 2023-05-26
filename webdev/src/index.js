@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Counter from './App';
 import reportWebVitals from './reportWebVitals';
+import MovieTable from './moviesearch/movie';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* passing a parameter for the counter Component */}
-    <Counter initial = {5}/>
+    {/*<Counter initial = {5}/>*/}
+    <MovieTable/>
   </React.StrictMode>
 );
 
