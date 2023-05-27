@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 
 const AddMovieForm = ({ addMovie }) => {
 
+//addMovie is () in movie.js passing as a parameter
+// initially set this things in empty "" the update occur once the user trigger the event
   const [movieName, setMovieName] = useState('');
   const [imdbRating, setImdbRating] = useState('');
   const [error, setError] = useState('');
 
+
+//in this method the event parameter refers to event occur we are using onChange
+//event.target refers to the element which triggers the event
+//event.target.value represent the current value of the user input
   const handleMovieNameChange = (event) => {
     setMovieName(event.target.value);
     setError('');
@@ -16,6 +22,8 @@ const AddMovieForm = ({ addMovie }) => {
     setError('');
   };
 
+
+// condition for adding a movie
   const handleAddMovie = () => {
     let errorMessage = '';
 
@@ -40,7 +48,7 @@ const AddMovieForm = ({ addMovie }) => {
       movieName: movieName.trim(),
       imdbRating: parseFloat(imdbRating.trim()),
     };
-
+// passing a movie object  to the addMovie()
     addMovie(movie);
 
     setMovieName('');
