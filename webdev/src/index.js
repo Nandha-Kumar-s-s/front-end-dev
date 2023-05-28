@@ -4,6 +4,8 @@ import './index.css';
 import Counter from './App';
 import reportWebVitals from './reportWebVitals';
 import MovieTable from './moviesearch/movie';
+import MyComponent from './inlinecss/inlinecss';
+import MyLink from './preventdefault/preventdefault';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,6 +14,8 @@ root.render(
     {/* passing a parameter for the counter Component */}
     {/*<Counter initial = {5}/>*/}
     <MovieTable/>
+    <MyComponent/>
+    <MyLink/>
   </React.StrictMode>
 );
 
