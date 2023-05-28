@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import MovieTable from './moviesearch/movie';
 import MyComponent from './inlinecss/inlinecss';
 import MyLink from './preventdefault/preventdefault';
+import Fragments from './reactfragment/fragment';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -16,6 +17,7 @@ root.render(
     <MovieTable/>
     <MyComponent/>
     <MyLink/>
+    <Fragments/>
   </React.StrictMode>
 );
 
