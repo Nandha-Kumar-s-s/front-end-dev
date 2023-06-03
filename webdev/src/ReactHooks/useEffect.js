@@ -31,8 +31,6 @@ The dependencies array is used to specify the values that the effect depends on.
 
         return () => alert("hey this is executed when the component is unmount")
     },
-   
-    
     [resource])
 
     return (
