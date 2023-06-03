@@ -7,7 +7,7 @@ import MovieTable from './moviesearch/movie';
 import MyComponent from './inlinecss/inlinecss';
 import MyLink from './preventdefault/preventdefault';
 import Fragments from './reactfragment/fragment';
-import Ref from './ref/ref';
+import Ref from './ReactHooks/ref';
 import LifeCycle from './lifecycle/LifeCycle';
 import MyList from './moviesearch/List';
 import App from './calculator/calculator';
@@ -20,6 +20,7 @@ import UseReducer from './ReactHooks/useReducer';
 import UseReducer2 from './ReactHooks/useReducer2';
 import UseState from './ReactHooks/useState';
 import UseEffect from './ReactHooks/useEffect';
+import UseRef from './ReactHooks/ref';
 
 
 
@@ -32,7 +33,7 @@ root.render(
     <MyComponent/>
     <MyLink/>
     <Fragments/>
-    <Ref/>
+    
     <LifeCycle/>
 
     <MyList/>
@@ -44,6 +45,7 @@ root.render(
     <UseReducer2/>
     <UseState/>*/}
     <UseEffect/>
+    <UseRef/>
     
   </React.StrictMode>
 );
